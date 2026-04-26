@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.modal-overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display:none;
+}
+
+.modal{
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+}
+
+.grid-input {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px 16px;
+    font-size: 18px;
+    color: #4a5568;
+    background-color: #f8fafc;
+    border: 2px solid #22c55e;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: default;
+}
+
+.grid-input:focus {
+    background-color: #ffffff;
+    border-color: #a23bf6;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.15);
+}
+
+.grid-input::-webkit-outer-spin-button,
+.grid-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.grid-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.modal-button, .recreate-btn {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #15803d; /* Глибокий зелений */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(21, 128, 61, 0.2); 
+    transition: all 0.2s ease;
+}
+
+.modal-button, .recreate-btn:hover {
+    background-color: #166534;
+    box-shadow: 0 6px 10px rgba(21, 128, 61, 0.3);
+    transform: translateY(-2px);
+}
+
+.modal-button, .recreate-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 960px;
+    height: 960px;
+    margin: 20px auto;
+}
+
+.drawn {
+    background-color: #1e293b;
+}
